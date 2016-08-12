@@ -13,7 +13,10 @@
                       "ppc64el": "ppc64el",
                       "s390x": "s390x",
                       "arm64": "arm64",
-                      "armhf": "armhf"},
+                      "armhf": "armhf",
+                      "mips": "mips",
+                      "mipsel": "mipsel",
+                      "mips64el": "mips64el"},
     "template_args": ["-r", "RELEASE", "-a", "ARCH"],
     "post_create": ["passwd -dl root",
                     "apt-get remove --purge openssh-server -y"]
